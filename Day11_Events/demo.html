@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wel"></div>
+    <script>
+        let student={
+            roll1:1,
+            roll2:2,
+            name1:'peter',
+            name2:'parker'
+        }
+        let data=`<table border='1'>
+            <thead>
+                <tr>
+                    <td>s.no</td>
+                    <td>Student name</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>${student.roll1}</td>
+                    <td>${student.name1}</td>
+                </tr>
+                <tr>
+                    <td>${student.roll2}</td>
+                    <td>${student.name2}</td>
+                </tr>
+            </tbody>
+            </table>`
+        
+            
+        document.getElementById('wel').innerHTML=data;    
+    </script>
+</body>
+</html>

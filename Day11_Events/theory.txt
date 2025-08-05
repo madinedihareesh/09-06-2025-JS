@@ -1,0 +1,18 @@
+Event:
+   it is nothing but an action.
+types :
+1.mouse events:
+  a.click
+  b.dbl click
+  c.mouseover
+  d.mouseenter
+  e.mouseleave
+  f.mousein
+  g.mouseout
+2.keybord events:
+   a.keypress
+   b.keyup
+   c.keydown
+3.form events
+4.page events
+5.windows events   

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1 id="head">welcom to java script</h1>
+    <button id="btn">click</button>
+    <button id="btn1" ondblclick="green()">Dblclick</button>
+    <button id="btn2">blue</button>
+    <input type="text" id="fname" onchange="Kpress(event)">
+
+    <script>
+        document.getElementById('btn').onclick=red
+        function red(){
+            document.getElementById('head').style.color='red';
+        }
+
+        function green(){
+            document.getElementById('head').style.color='green';
+        }
+
+        document.getElementById('btn2').addEventListener('mouseleave',()=>{
+            document.getElementById('head').style.color='blue';
+        })
+
+        function Kpress(e){
+            console.log('you are clicking button'+e.key);
+            
+        }
+    </script>
+</body>
+</html>
