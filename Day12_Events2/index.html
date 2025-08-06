@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events 2</title>
+</head>
+<body>
+    <!-- <input type="text" id="fname" placeholder="Enter sone text"> -->
+     <form action="#" method="get" id="detail">
+        <input type="text" id="fname" placeholder="EnterFirstName">
+        <input type="text" placeholder="EnterLastName" id="lname">
+        <button>Submit</button>
+    </form>
+    <p id="para"></p>
+
+    <script>
+        // document.getElementById('fname').addEventListener('keydown',(e)=>{
+        //     console.log('keypressed'+e.key);
+            
+        // })
+
+        // document.getElementById('detail').addEventListener('submit',()=>{
+        //   let data=  document.getElementById('fname').value;
+        //   document.getElementById('para').innerText=data;
+            
+        // })
+
+        // document.getElementById('fname').addEventListener('change',(e)=>{
+        //     let name=e.target.value;
+        //     document.getElementById('para').innerText=name;
+            
+        // })
+
+        window.addEventListener('load',()=>{
+            console.log('this is a fresh page');
+            
+        })
+
+        window.addEventListener('resize',()=>{
+            console.log(window.innerWidth+'px');
+            console.log(window.innerHeight+'px');
+            
+            
+        })
+    </script>
+</body>
+</html>

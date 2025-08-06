@@ -10,7 +10,8 @@
     <button id="btn">click</button>
     <button id="btn1" ondblclick="green()">Dblclick</button>
     <button id="btn2">blue</button>
-    <input type="text" id="fname" onchange="Kpress(event)">
+    <input type="text" id="fname">
+    <p id="para"></p>
 
     <script>
         document.getElementById('btn').onclick=red
@@ -22,14 +23,16 @@
             document.getElementById('head').style.color='green';
         }
 
-        document.getElementById('btn2').addEventListener('mouseleave',()=>{
+        document.getElementById('btn2').addEventListener('mouseout',()=>{
             document.getElementById('head').style.color='blue';
         })
 
-        function Kpress(e){
-            console.log('you are clicking button'+e.key);
-            
-        }
+        
+
+        
+
+
+       
     </script>
 </body>
 </html>
