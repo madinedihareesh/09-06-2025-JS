@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6</title>
+</head>
+<body>
+    <!-- 
+    spred and rest(...)
+    function add(ser){
+    }
+    array=[]
+    obj={
+    }
+     -->
+    <div id="container"></div>
+    <script>
+        // let arr1=[1,2,3,4,5,6,7]
+        // let arr2=[...arr1,8,9]
+        // console.log(arr1);
+        // console.log(arr2);
+
+        // let arr1=[1,2,3,4,5]
+        // let arr2=[6,7,8,9,10]
+        // let arr3=[...arr1,...arr2]
+        // arr3.push(11)
+        // console.log(arr3);
+        // console.log(typeof(arr3));
+        
+        // let person={
+        //     name:'purna',
+        //     age:22,
+        //     loc:'hyd',
+        //     sal:25000
+        // }
+        // let person2={
+        //     name:'venkat',
+        //     age:22,
+        //     loc:'Vijayawada'
+        // }
+        // let person3={...person,...person2}
+        // person3.gender='male'
+        // console.log(person3);
+
+
+        // function add(...values){
+        //     x=0
+        //     values.forEach(vlaue,index=>{
+        //         x+=vlaue
+        //     });
+        //     return x;
+            
+            
+        // }
+        // console.log(add(3,5,3,2,4,5,6,7,9));
+
+
+        let map=new Map();
+        map.set('name','purna');
+        map.set('age',20);
+        map.delete('age')
+        map.clear()
+        console.log(map);
+
+        let set=new Set()
+        set.add(23)
+        set.add(12)
+        set.add(10)
+        set.add(32)
+        console.log(set);
+
+
+        let arr1=[1,2,3,4,5,6]
+        arr1.map(x=>{
+            x=x**2
+            console.log(x);
+            
+        })
+
+       let even= arr1.filter(x=>x%2===0)
+       console.log(even);
+
+
+      let out=arr1.reduce((x,y)=>x+y,0);
+      console.log(out);
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </script>
+</body>
+</html>

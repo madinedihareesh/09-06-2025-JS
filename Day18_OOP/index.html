@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opp</title>
+</head>
+<body>
+    
+    <script>
+        class Bank{
+            #balance=0
+            diposit(amount){
+                if(amount>0){
+                    this.#balance=this.#balance+amount
+                    console.log(`${amount} amount was credited into your account`);
+                    
+                }
+                else{
+                    console.log(`Enter a valid amount`);
+                    
+                }
+
+            }
+            getbalance(){
+                console.log(`Your account current balance is ${this.#balance}`);
+                
+            }
+        }
+        let b=new Bank();
+        b.diposit(100);
+        b.getbalance();
+
+        class parent{
+            constructor(){
+                this.a=10;
+                this.b=20
+            }
+            print(){
+                console.log('this is a parent class');
+            }
+            add(){
+                console.log(this.a+this.b);
+                
+            }
+        }
+        
+        class child extends parent{
+            constructor(a,b){
+                super(a,b)
+            }
+          
+            write(){
+                
+               console.log('this is a child class');
+                
+            }
+            mul(){
+                console.log(this.a*this.b);
+                
+            }
+        }
+       let c=new child()
+       c.write();
+       c.print();
+       c.add();
+       c.mul();
+        console.log(c.a);
+
+       class Animal{
+        nature(){
+            console.log('every animal in this world eats');
+            
+        }
+       }
+       
+       class Dog extends Animal{
+        nature(){
+            console.log('Dog barks');
+            
+        }
+       }
+
+       class cat extends Animal{
+        nature(){
+            console.log('cat says meaoh');
+            
+        }
+       }
+       let D=new Dog();
+       D.nature();
+       let A=new Animal();
+       A.nature();
+       let C=new cat();
+       C.nature();
+    </script>
+</body>
+</html>
